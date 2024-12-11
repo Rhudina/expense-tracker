@@ -55,7 +55,9 @@ ROOT_URLCONF = 'expense_tracker.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+         'DIRS': [
+            BASE_DIR / 'templates',  # Adjust this to include the path to your templates directory
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
